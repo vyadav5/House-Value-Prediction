@@ -15,7 +15,7 @@ as the other columns in the dataset. I used the training dataset to teach our mo
 1. Pandas: To handle structured data 
 2. Scikit Learn: For Machine learning 
 3. NumPy: Solved the purpose for linear algebra and mathematics
-4. Seaborn: For data visualization
+4. MatplotLib and Seaborn: For data visualization
 
 ## Project Pipeline: 
 #### Data Cleaning: 
