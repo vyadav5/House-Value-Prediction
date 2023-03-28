@@ -19,18 +19,13 @@ as the other columns in the dataset. I used the training dataset to teach our mo
 
 ## Project Pipeline: 
 #### Data Cleaning: 
-Since Kaggle doesn't provide us with a clean data I managed to do it handling missing values and checking for NaN values as it causes problem in the models.
-I tried droppping the ocean_proximity column from the dataset as it is a string value which could further cause issues in our models and dropped null values.
+Since Kaggle doesn't provide us with a clean data I managed to do it by handling missing values and checking for NaNs as it causes problem in the ML models.I dropped null values and later dropped the ocean_proximity column from the dataset as it is a string value which could further cause issues in our models 
 
 #### Exploratory Data Analysis (EDA):
-This is mostly where we use our data visualization techniques. I began with building a histogram of the training data. The distribution of the house prices
-were right skewed which means that few of the houses were comparetively expensive. Additionaly, I plotted a heatmap with respect to the correlation of the 
-features with the target variable. 
+This is mostly where we use our data visualization techniques. I began with building a histogram of X and y training data. The distribution of the house prices were right skewed which means that few of the houses were comparetively expensive. Additionaly, I plotted a heatmap with respect to the correlation of the features with the target variable. 
 
 #### Data pre-processing and Feature Engineering:
-I performed pre-processing by applying a log transform to house prices to compress outliers for a normal distribution. I also implemented feature engineering
-to apply transformations to convert the categories into numbers. I used panda's get_dummies for one hot encoding to convert the ocean_proximity column in 
-a binary format of 0s and 1s. 
+I performed pre-processing by applying a log transform to house prices to compress outliers for a normal distribution. I also implemented feature engineering to apply transformations to convert the categories into numbers. I used panda's get_dummies for one hot encoding to convert the ocean_proximity column in a binary format of 0s and 1s. 
 
 #### Machine Learning:
 Now that we have cleaned, explored and visualized our data. The next step is to build our model for house prices. I have used linear regression and random 
